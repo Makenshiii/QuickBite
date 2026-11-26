@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f4">
+    <meta name="description" content="QuickBite makes food and grocery shopping quick, easy, and delicious.">
+    <title>QuickBite — Good food, right on time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot"></span>
+      Your neighborhood favorites, delivered in <strong>25–35 min</strong>
+      <span class="announcement-sparkle" aria-hidden="true">✦</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="QuickBite home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none"><path d="M7 12.5c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v3c0 1.1-.9 2-2 2H9c-1.1 0-2-.9-2-2v-3Z" fill="currentColor"/><path d="M9 19h24l-2.2 12.3A3.2 3.2 0 0 1 27.7 34H14.3a3.2 3.2 0 0 1-3.1-2.7L9 19Z" fill="currentColor"/><path d="M16 7v3m10-3v3" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="m18 24 2.2 2.2L25 22" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-name">quick<span>bite</span></span>
+      </a>
+
+      <button class="delivery-location" type="button" aria-label="Delivery location">
+        <span class="location-icon" aria-hidden="true">⌖</span>
+        <span class="location-copy"><small>Delivering to</small><strong>Home <span aria-hidden="true">⌄</span></strong></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Discover</a>
+        <a class="nav-link" href="#menu">Our menu</a>
+        <a class="nav-link" href="#why-quickbite">How it works</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button search-shortcut" type="button" aria-label="Search menu" data-focus-search>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button class="cart-button" type="button" data-open-cart aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 4.5h2l2.2 10.1a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 1.9-1.5l1.5-6.2H7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+          <span>My cart</span><span class="cart-count" data-cart-count>0</span>
+        </button>
+        <button class="mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>☰</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-sparkle">✳</span> GOOD FOOD, RIGHT ON TIME</div>
+          <h1 id="hero-title">A little joy,<br>in every <span>bite.</span></h1>
+          <p>Cravings don't wait. Get the good stuff from your favorite local spots, delivered fresh to your door.</p>
+          <a class="button button-dark hero-cta" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar avatar-one">👩🏻</span><span class="avatar avatar-two">👨🏽</span><span class="avatar avatar-three">👩🏾</span>
+            </div>
+            <div><strong>4.9/5</strong><span> loved by 2,000+ locals</span></div>
+          </div>
+          <span class="hero-doodle doodle-one" aria-hidden="true">✳</span>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-frame">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=85" alt="Colorful fresh grain bowl with greens and vegetables">
+          </div>
+          <div class="hero-sticker"><span class="sticker-star">✳</span><strong>Made fresh.<br>Delivered happy.</strong></div>
+          <div class="delivery-note"><span class="delivery-note-icon">⚡</span><span><strong>Fast delivery</strong><small>At your doorstep in 25 min</small></span></div>
+          <span class="hero-doodle doodle-two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="menu-section page-width" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow section-eyebrow">A LITTLE SOMETHING FOR EVERYONE</div>
+            <h2 id="menu-title">What sounds good?</h2>
+          </div>
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input id="menu-search" type="search" placeholder="Search meals or snacks..." aria-label="Search meals or snacks">
+            <kbd>⌘ K</kbd>
+          </label>
+        </div>
+
+        <div class="category-row" role="group" aria-label="Filter products by category">
+          <button class="category-chip active" type="button" data-category="All"><span class="category-emoji">✳</span> All food</button>
+          <button class="category-chip" type="button" data-category="Meals"><span class="category-emoji">🍜</span> Meals</button>
+          <button class="category-chip" type="button" data-category="Snacks"><span class="category-emoji">🥐</span> Snacks</button>
+          <button class="category-chip" type="button" data-category="Drinks"><span class="category-emoji">🥤</span> Drinks</button>
+          <button class="category-chip" type="button" data-category="Desserts"><span class="category-emoji">🍰</span> Sweet treats</button>
+          <span class="category-note">Made with love, nearby <span aria-hidden="true">♡</span></span>
+        </div>
+
+        <div class="menu-title-row">
+          <div><h3>Popular near you <span class="title-sparkle">✳</span></h3><p>Local favorites, picked just for you.</p></div>
+          <button class="text-button" type="button" data-show-all>View all <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No bites found. Try another search or category.</p>
+      </section>
+
+      <section class="promo-section page-width" id="why-quickbite">
+        <div class="promo-copy">
+          <span class="promo-label">A LITTLE TREAT FROM US</span>
+          <h2>Your first bite?<br><span>It's on us.</span></h2>
+          <p>Take 20% off your first order. Good food is even better when it comes with a little something extra.</p>
+          <button class="button button-dark promo-button" type="button" data-promo>Get 20% off <span aria-hidden="true">↗</span></button>
+          <small class="promo-code">Use code <strong>FIRSTBITE</strong> at checkout</small>
+        </div>
+        <div class="promo-visual" aria-hidden="true">
+          <span class="promo-orbit orbit-one"></span><span class="promo-orbit orbit-two"></span>
+          <div class="promo-food">🥡</div><span class="promo-floating floating-one">✳</span><span class="promo-floating floating-two">♡</span>
+          <div class="promo-stamp"><strong>20<span>%</span></strong><small>OFF YOUR<br>FIRST ORDER</small></div>
+        </div>
+      </section>
+
+      <section class="perks page-width" aria-label="QuickBite benefits">
+        <div class="perk"><span class="perk-icon perk-green">⚡</span><div><strong>Quick by nature</strong><p>Good food, there in a flash.</p></div></div>
+        <div class="perk"><span class="perk-icon perk-yellow">♡</span><div><strong>Local with love</strong><p>From the neighborhood to you.</p></div></div>
+        <div class="perk"><span class="perk-icon perk-pink">✳</span><div><strong>Fresh, always</strong><p>Made today, enjoyed today.</p></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M7 12.5c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v3c0 1.1-.9 2-2 2H9c-1.1 0-2-.9-2-2v-3Z" fill="currentColor"/><path d="M9 19h24l-2.2 12.3A3.2 3.2 0 0 1 27.7 34H14.3a3.2 3.2 0 0 1-3.1-2.7L9 19Z" fill="currentColor"/></svg></span><span class="brand-name">quick<span>bite</span></span></a>
+      <p>Little joys, delivered daily. © 2025 QuickBite</p>
+      <a href="#home">Back to the good stuff ↑</a>
+    </footer>
+
+    <div class="overlay" id="cart-overlay" hidden>
+      <button class="overlay-backdrop" type="button" data-close-cart aria-label="Close cart"></button>
+      <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="drawer-header"><div><span class="eyebrow">YOUR GOOD STUFF</span><h2 id="cart-title">Your cart <span class="drawer-count" data-cart-count>0</span></h2></div><button class="close-button" type="button" data-close-cart aria-label="Close cart">×</button></div>
+        <div class="cart-content" id="cart-content"></div>
+        <div class="cart-footer" id="cart-footer"></div>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
